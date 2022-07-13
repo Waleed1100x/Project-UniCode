@@ -1,0 +1,18 @@
+let phone = [
+    {brand:"APPLE",name: "iPhone SE", RAM:"4GB",Resolution:"750 x 1334 pixels",Size:"4.7 inches",Memory:"Up to 256GB",Released:"2022, March 18",Connectivity:"5G",Battery:2018},
+    {brand:"APPLE",name: "iPhone 13 Pro Max", RAM:"6GB",Resolution:"1284 x 2778 pixels",Size:"6.7 inches,",Memory:"Up to 1TB",Released:"Released 2021, September 24",Connectivity:"5G",Battery:4352},
+    {brand:"APPLE",name: "iPhone 13", RAM:"4GB",Resolution:"1170 x 2532 pixels",Size:"6.1 inches",Memory:"Up to 512GB",Released:"2021, September 24",Connectivity:"5G",Battery:3240},
+    {brand:"APPLE",name: "iPhone 12 Pro Max", RAM:"6GB",Resolution:"1284 x 2778 pixels",Size:"6.7 inches",Memory:"Up to 512GB",Released:"2020, October 13",Connectivity:"5G",Battery:3687},
+    {brand:"APPLE",name: "iPhone XS Max", RAM:"4GB",Resolution:"1242 x 2688 pixels",Size:"6.5 inches",Memory:"Up to 512GB",Released:"2018, September 21",Connectivity:"4G",Battery:3174},
+    {brand:"SAMSUNG",name: "Sas", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"SAMSUNG",name: "dd", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"SAMSUNG",name: "ss", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"SAMSUNG",name: "ddds", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"SAMSUNG",name: "ssas", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "sasa", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "ssds", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "sdada", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "sfafa", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "sarsr", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    {brand:"HUAWEI",name: "sarafa", RAM:"",Resolution:"",Size:"",Memory:"",Released:"",Connectivity:"",Battery:1},
+    ];
