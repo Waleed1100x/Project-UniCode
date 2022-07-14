@@ -6,6 +6,7 @@ const icon = searchWrapper.querySelector(".icon");
 let linkTag = searchWrapper.querySelector("a");
 let webLink;
 const printphone = document.getElementById('Phonee');
+let ComparePhones = [];
 // if user press any key and release
 inputBox.onkeyup = (e)=>{
     let userData = e.target.value; //user enetered data
@@ -56,32 +57,72 @@ function showSuggestions(list){
 }
 // Function buildTable
 function buildTable(search){
+
     let s = `<li>${search}</li>`;
 let table = document.getElementById("table-group-divider");
+
     for(var i = 0; i< phone.length ; i++){
         if(phone[i].name.toLocaleLowerCase()== s.toLocaleLowerCase()){
+        ComparePhones.push(phone[i]);
+        let j = 0;
+        if(ComparePhones.length == 2){
         var row = `
         <tr>
-        <th scope="col">${phone[i].brand}</th>
-        <th scope="col">${phone[i+1].brand}</th>
+        <th scope="col">Brand</th>
+        <th scope="col">${ComparePhones[j].brand}</th>
+        <th scope="col">${ComparePhones[j+1].brand}</th>
         </tr>
         <tr> 
-        <td>${phone[i].name}</td>
-        <td>${phone[i+1].name}</td>
+        <th scope="col">Name</th>
+        <td>${ComparePhones[j].name}</td>
+        <td>${ComparePhones[j+1].name}</td>
         </tr>
         <tr> 
-        <td>${phone[i].Battery}</td>
-        <td>${phone[i+1].Battery}</td>
+        <th scope="col">Battery</th>
+        <td>${ComparePhones[j].Battery}</td>
+        <td>${ComparePhones[j+1].Battery}</td>
         </tr>
         <tr> 
-        <td>${phone[i].Size}</td>
-        <td>${phone[i+1].Size}</td>
+        <th scope="col">Size</th>
+        <td>${ComparePhones[j].Size}</td>
+        <td>${ComparePhones[j+1].Size}</td>
         </tr>
         <tr> 
-        <td>${phone[i].Released}</td>
-        <td>${phone[i+1].Released}</td>
-        </tr>`
+        <th scope="col">Released</th>
+        <td>${ComparePhones[j].Released}</td>
+        <td>${ComparePhones[j+1].Released}</td>
+        </tr>
+        `
+        ComparePhones = [];
+        table.innerHTML = ""; 
         table.innerHTML += row
+        } else {
+            var row = `
+            
+            <tr>
+            <th scope="col">Brand</th>
+            <th scope="col">${ComparePhones[j].brand}</th>
+            </tr>
+            <tr> 
+            <th scope="col">Name</th>
+            <td>${ComparePhones[j].name}</td>
+            </tr>
+            <tr> 
+            <th scope="col">Battery</th>
+            <td>${ComparePhones[j].Battery}</td>
+            </tr>
+            <tr> 
+            <th scope="col">Size</th>
+            <td>${ComparePhones[j].Size}</td>
+            </tr>
+            <tr> 
+            <th scope="col">Released</th>
+            <td>${ComparePhones[j].Released}</td>
+            </tr>
+            `
+            table.innerHTML = "";
+            table.innerHTML += row
+            }
         
         }}
 }
